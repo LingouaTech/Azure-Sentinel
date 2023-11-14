@@ -1,4 +1,4 @@
-# Azure Sentinel RDP (brute force attacks)
+# Azure Sentinel Geolocation RDP (brute force attacks)
 <h2>Description</h2>
 The purpose of this project is to set up Azure Sentinel (SIEM) and connect it to a live virtual machine (VM) acting as a honey pot. Make the VM vulnerable, and monitor and log different global attacks. We will use a PowerShell script to programmatically extract the IP address from the Windows log and send it to a third-party API (ipgeolocation.io). The API will derive the latitude, longitude, state, province, etc of the attacks and send it back to our VM which we will use to create a custom log with geographical data. Then we will configure Azure Sentinel Workbook where we will display the global attack data (RDP brute force) on a world map according to physical location and magnitude of attacks.
 <br />
